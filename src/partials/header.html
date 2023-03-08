@@ -1,13 +1,44 @@
 <section>
-  <header>
+  <header id="header">
     <div class="container container__header">
-      <svg class="nav_tittle">
-        <use
-          href="/src/images/icons.svg#icon-icecream"
-          width="199px"
-          height="50px"
-        ></use>
-      </svg>
+      <div class="header-nav">
+        <a href="/src/index.html" class="header-nav__link">
+          <svg class="header-nav__icon" width="199" height="50">
+            <use href="/src/images/icons.svg#icon-icecream"></use>
+          </svg>
+        </a>
+        <div class="menu-change">
+          <button class="burger" type="button">
+            <svg class="burger-icon" width="20" height="12px">
+              <use href="/src/images/icons.svg#icon-Burger"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <a href="#productos" class="header-nav__image">
+        <img src="/src/images/icecream.png" alt="icecream_of_header" />
+      </a>
+      <div class="text">
+        <div>
+          <h1 class="text__tittle">
+            ice cream
+            <br />
+            made width
+            <br />
+            <span class="text__passion">passion</span>
+          </h1>
+          <div class="hold-btn">
+            <button class="text__btn_1">
+              <a href="#productos" class="text__btn_1-link">Products</a>
+            </button>
+            <button class="text__btn_2">
+              <a href="#how-its-made" class="text__btn_2-link"
+                >How it's made?</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 </section>
