@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+.container-cards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-img{
+    list-style: none;
+    margin-bottom: 50px;
+    display: flex;
+}
+.plus-section{   
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color:$secondary-color;
+}
+.name-section{
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 66px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $primary-color;
+}
+
+.products-description{
+    display: flex;
+    justify-content: center;
+}
+
+.product--name{
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #ffff;
+}
+.product--description{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 152%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #ffff;
+    padding: 20%;
+}
+.img-pink{
+    background-color: $eighth-color;
+    border-radius: 24px;
+    position: relative;
+    padding-top: 150px;
+    display: flex;
+    bottom: -300px;
+}
+.image{
+    position: absolute;
+    top: -200px;
+    
+}
+.point{
+    font-size: 50px;
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+}
+.section-title{
+    position: absolute;
+    justify-content: center;
+}
+
+.btn{
+    display: flex;
+    fill:  $primary-color;
+    justify-content: center;
+    border-radius: 100%;
+    border: 1px;
+    padding: 15px;
+    margin-bottom: 40px ;
+}
+.img-brown{
+    @extend .img-pink;
+    background-color: $fifth-color;    
+}
+.img-green{
+    @extend .img-pink;
+    background-color: $fourth-color;
+}
+
