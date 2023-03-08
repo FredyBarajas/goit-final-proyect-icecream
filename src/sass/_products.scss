@@ -34,8 +34,8 @@
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    $primary-color: rgba(212, 20, 67, 1);
-}
+    color: $primary-color;
+
 .products-description{
     display: flex;
     justify-content: center;
@@ -86,17 +86,13 @@
 position: absolute;
 justify-content: center;
 }
-.icon-arrow{
-    position: relative;
-    $primary-color: rgba(212, 20, 67, 1);
-}
+
 .btn{
     display: flex;
     $primary-color: rgba(212, 20, 67, 1);
     justify-content: center;
     border-radius: 100%;
     border: 1px;
-    padding: 10px;
     margin-bottom: 40px ;
 }
 
