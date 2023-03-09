@@ -1,0 +1,99 @@
+header {
+  background-color: $eighth-color;
+}
+
+.container__header {
+  height: 502px;
+  padding-top: 8px;
+  position: relative;
+  background-image: url(/src/images/ellipse.png);
+  background-size: 346px 346px;
+  background-repeat: no-repeat;
+  background-position: top 83px left 36px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  margin-bottom: 138px;
+}
+
+.burger {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.header-nav__image {
+  width: 171px;
+  height: 410px;
+  position: absolute;
+  right: 32px;
+  bottom: 0px;
+  cursor: pointer;
+}
+
+.text {
+  position: relative;
+}
+
+.text__tittle {
+  font-family: Titan One;
+  font-style: Regular;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $ninth-color;
+  margin-bottom: 20px;
+}
+
+.text__passion {
+  color: $primary-color;
+  font-size: 48px;
+  line-height: 0.96;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.hold-btn {
+  display: flex;
+}
+
+.text__btn_1 {
+  background-color: $primary-color;
+  margin-right: 10px;
+  width: 62px;
+}
+
+.text__btn_1-link {
+  color: $ninth-color;
+}
+
+.text__btn_2 {
+  background-color: $ninth-color;
+  width: 84px;
+}
+
+.text__btn_2-link {
+  color: $primary-color;
+}
+
+.text__btn_1,
+.text__btn_2 {
+  font-family: DM sans;
+  font-style: Regular;
+  font-size: 8px;
+  font-weight: 400;
+  border-radius: 20px;
+  padding: 0 14px;
+  cursor: pointer;
+  height: 24px;
+  font-size: 8px;
+  line-height: 1.25;
+  border: none;
+}
