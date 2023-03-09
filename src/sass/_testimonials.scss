@@ -1,0 +1,141 @@
+.container {
+  background-color: $ninth-color;
+  max-width: 320px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__primary,
+  &__second,
+  &__third,
+  &__fourth,
+  &__fifth,
+  &__sixth {
+    transform: scale(1) translateX(0);
+    margin-bottom: 2px;
+    margin-right: 2px;
+  }
+
+  &__fourth {
+    margin-top: 20px;
+  }
+
+  &__fifth {
+    margin-bottom: 50px;
+  }
+
+  &__image {
+    display: block;
+    width: auto;
+    height: auto;
+  }
+
+  &__image:active {
+    transform-origin: center right;
+    transform: scale(1.25);
+  }
+}
+
+.rewiews-card {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    list-style: none;
+  }
+
+  &__item {
+    margin: 0 auto;
+  }
+
+  &__image {
+    padding-bottom: 15px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__description {
+    background-color: $twelfth-color;
+    width: 280px;
+    height: 380px;
+    position: relative;
+  }
+
+  &__svg {
+    position: absolute;
+    z-index: 1;
+    height: 40px;
+    width: 54px;
+    top: 10px;
+    left: 60px;
+  }
+
+  &__text {
+    position: absolute;
+    height: 239px;
+    width: 157px;
+    z-index: 2;
+    color: $eleventh-color;
+    font-family: DM Sans;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 33px 58px 0px 65px;
+    text-decoration: underline 1px solid $thirteenth-color;
+    text-underline-offset: 8px;
+  }
+
+  &__title {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    margin-top: 36px;
+  }
+
+  &__container-svg-1 {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    width: auto;
+    gap: 10px;
+    margin-bottom: 36px;
+  }
+
+  &__svg-circle-1 {
+    height: 4px;
+    width: 4px;
+    fill: $primary-color;
+    cursor: pointer;
+  }
+
+  &__container-svg-2 {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    width: auto;
+    gap: 15px;
+  }
+
+  &__svg-house {
+    height: 12px;
+    width: 12px;
+    cursor: pointer;
+  }
+
+  &__svg-circle-2 {
+    height: 12px;
+    width: 12px;
+    fill: $thirteenth-color;
+    cursor: pointer;
+  }
+}
