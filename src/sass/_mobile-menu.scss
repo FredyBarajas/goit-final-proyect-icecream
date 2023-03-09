@@ -23,19 +23,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: getColor(secondary);
   right: 16px;
   top: 15px;
   width: 30px;
   height: 30px;
-  fill: getColor(accent);
   position: absolute;
   margin: 0;
   padding: 0;
-
   cursor: pointer;
   border: none;
-
   outline: none;
   transition-property: fill;
   transition-duration: 250ms;
@@ -78,7 +74,6 @@
   position: absolute;
   top: 16px;
   right: 16px;
-  color: getColor(accent);
 }
 
 .mobile-menu {
@@ -154,8 +149,8 @@
   align-items: start;
 }
 
-@media screen and (max-width:319px) {
-  .menu-container{
-    display:none;
-    }
+@media screen and (max-width: 319px) {
+  .menu-container {
+    display: none;
+  }
 }
