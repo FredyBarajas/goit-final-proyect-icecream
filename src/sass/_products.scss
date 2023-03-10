@@ -99,7 +99,13 @@
         flex-direction: column;
         justify-content: center;
     }
-    
+    .plus-section{
+        font-size: 26px;
+        padding-bottom: 18px;
+    }
+    .name-section{
+        font-size: 48px;
+        }
     .section-title{
     display: flex;
     flex-direction: column;
@@ -118,7 +124,8 @@
     .image{
         width: 220px;
         height: 224px;
-        }
+        right: 0px;
+        top: -120px        }
         .img-pink:not(:last-child):not(:last-child) {
             margin-right: 16px;
         }      
@@ -126,4 +133,57 @@
             display: flex;
             flex-wrap: nowrap;
         }  
+        .btn{
+            left: 90px;
+        }
+}
+@media screen and (min-width: 1200px){
+    .product{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .plus-section{
+        font-size: 30px;
+        padding-bottom: 16px;
+    }
+    .name-section{
+        font-size: 58px;
+
+    }
+    
+    .section-title{
+    display: flex;
+    flex-direction: column;
+    }
+    .container{
+        width: 1200px;
+        display: flex;
+        justify-content: center; 
+        flex-direction: column;
+    }
+    .list{
+        display: flex;
+        justify-content: space-between ;
+        width: 368px;
+    }
+    .image{
+        width: 368px;
+        height: 394px;
+        right: 0px;   
+        top: -250px;
+        }
+        .img-pink:not(:last-child):not(:last-child) {
+            margin-right: 32px;
+        }      
+        .list-card{
+            position: relative;
+            display: flex;
+            flex-wrap: nowrap;
+            top:100px;
+        }  
+        .btn{
+            left: 160px;
+        }
+
 }
