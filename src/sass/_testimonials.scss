@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: -20px;
 
   &__primary,
   &__second,
@@ -19,7 +20,7 @@
   }
 
   &__fifth {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
 
   &__image {
@@ -28,7 +29,7 @@
     height: auto;
   }
 
-  &__image:active {
+  &__image:hover {
     transform-origin: center right;
     transform: scale(1.25);
   }
