@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  padding-top: 32px;
+  background-color: $fourteenth-color;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__button {
+  @extend .button--buy;
+  margin-top: 0;
+  margin-bottom: 10px;
+  box-shadow: none;
+  width: 162px;
+  background-color: #fff;
+}
