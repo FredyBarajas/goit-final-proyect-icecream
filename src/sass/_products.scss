@@ -72,7 +72,7 @@
     padding-top: 150px;
     display: flex;
     position: relative;
-    bottom: -300px;
+    bottom: -200px;
 }
 .img-brown{
     @extend .img-pink;
@@ -92,4 +92,38 @@
     margin-bottom: 40px;
     padding: 15px;
     background-color: #ffff;
+}
+@media screen and (min-width: 768px){
+    .product{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .section-title{
+    display: flex;
+    flex-direction: column;
+    }
+    .container{
+        width: 768px;
+        display: flex;
+        justify-content: center; 
+        flex-direction: column;
+    }
+    .list{
+        display: flex;
+        justify-content: space-between ;
+        width: 224px;
+    }
+    .image{
+        width: 220px;
+        height: 224px;
+        }
+        .img-pink:not(:last-child):not(:last-child) {
+            margin-right: 16px;
+        }      
+        .list-card{
+            display: flex;
+            flex-wrap: nowrap;
+        }  
 }
