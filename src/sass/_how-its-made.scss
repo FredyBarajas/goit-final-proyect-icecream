@@ -11,7 +11,6 @@
 }
 
 .how-container {
-  width: 320px;
   height: 1480px;
   background-color: #fff5f6;
   margin-right: auto;
@@ -156,4 +155,13 @@
 .how-svg-corazon {
   height: 50px;
   width: 49px;
+}
+
+@media screen and (min-width: 768px) {
+  .how-title-t {
+    font-size: 26px;
+  }
+  .how-title-h {
+    font-size: 48px;
+  }
 }

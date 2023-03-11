@@ -39,3 +39,9 @@ p {
 a {
   text-decoration: none;
 }
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
