@@ -4,13 +4,66 @@
   background-color: $fourteenth-color;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
-.footer__button {
-  @extend .button--buy;
-  margin-top: 0;
-  margin-bottom: 10px;
-  box-shadow: none;
-  width: 162px;
-  background-color: #fff;
+.footer__button--location {
+  width: 176px;
+  height: 44px;
+  background: $primary-color;
+  border-radius: 22px;
+  border: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.icon--location {
+  @extend .mobile-menu__icon;
+  stroke: #fff;
+}
+.footer__button--franchise {
+  margin-top: 10px;
+  width: 176px;
+  height: 44px;
+  background: #ffffff;
+  border-radius: 22px;
+  border: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $primary-color;
+}
+
+.footer__description {
+  width: 232px;
+  height: 42px;
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #ffa5ba;
+  margin-top: 40px;
+}
+
+.footer__Whit {
+  width: 232px;
+  height: 42px;
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 39px;
+  text-transform: uppercase;
+  color: #d41443;
+  margin-top: 16px;
 }
