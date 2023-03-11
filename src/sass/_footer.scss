@@ -43,8 +43,8 @@
 }
 
 .footer__description {
-  width: 232px;
-  height: 42px;
+  width: 100%;
+  padding-right: 10%;
   font-family: 'Titan One';
   font-style: normal;
   font-weight: 400;
@@ -56,14 +56,84 @@
 }
 
 .footer__Whit {
-  width: 232px;
-  height: 42px;
+  width: 100%;
+  padding-right: 20%;
   font-family: 'Titan One';
   font-style: normal;
   font-weight: 400;
   font-size: 34px;
   line-height: 39px;
   text-transform: uppercase;
-  color: #d41443;
+  color: $primary-color;
   margin-top: 16px;
+}
+
+.footer__list {
+  margin-top: 40px;
+  display: flex;
+  width: 320px;
+  justify-content: flex-end;
+}
+
+.fotter__social-item {
+  margin-right: 28px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $seventh-color;
+  &:last-child {
+    margin-right: 20px;
+  }
+}
+
+.fotter__social-icon {
+  @extend .icon--location;
+  margin-left: 0;
+}
+
+.footer__link {
+  margin-top: 40px;
+  width: 100%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 186%;
+  text-align: right;
+  color: $seventeenth-color;
+  margin-right: 40px;
+}
+
+.link__social {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__telephone {
+  color: $primary-color;
+}
+
+.fotter__copyrights {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  width: 100vw;
+  line-height: 152%;
+  text-align: center;
+  color: $sixth-color;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px $eighteeth-color solid;
+}
+
+.Footer__paragraph {
+  width: 150px;
 }
