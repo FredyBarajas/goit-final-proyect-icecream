@@ -61,16 +61,16 @@
 
 .footer__description {
   width: 100%;
-  padding-right: 10%;
+  padding-right: 30%;
   font-family: 'Titan One';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-
   text-transform: uppercase;
   color: #ffa5ba;
   margin-top: 40px;
-  text-align: center;
+  margin-left: 0px;
+  text-align: left;
   transition-property: letter-spacing;
   transition-duration: 500ms;
   &:hover {
@@ -246,8 +246,9 @@
 @media screen and (min-width: 1200px) {
   .footer__description {
     font-size: 30px;
-    width: 474px;
+    width: 450px;
     margin-top: 120px;
+    text-align: center;
   }
 
   .footer__Whit {
