@@ -27,6 +27,11 @@
   justify-content: center;
   align-items: center;
   color: #fff;
+  transition-property: transform;
+  transition-duration: 500ms;
+  &:hover {
+    transform: translatey(-10px);
+  }
 }
 
 .icon--location {
@@ -47,6 +52,11 @@
   justify-content: center;
   align-items: center;
   color: $primary-color;
+  transition-property: transform;
+  transition-duration: 500ms;
+  &:hover {
+    transform: translatey(-10px);
+  }
 }
 
 .footer__description {
@@ -56,10 +66,16 @@
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 21px;
+
   text-transform: uppercase;
   color: #ffa5ba;
   margin-top: 40px;
+  text-align: center;
+  transition-property: letter-spacing;
+  transition-duration: 500ms;
+  &:hover {
+    letter-spacing: 3;
+  }
 }
 
 .footer__Whit {
@@ -73,6 +89,14 @@
   text-transform: uppercase;
   color: $primary-color;
   margin-top: 16px;
+  transition-property: transform;
+  transition-duration: 500ms;
+  &:hover {
+    transform: scale(1.5);
+  }
+  &:last-child {
+    margin-right: 20px;
+  }
 }
 
 .footer__list {
@@ -91,6 +115,11 @@
   align-items: center;
   justify-content: center;
   background-color: $seventh-color;
+  transition-property: background-color;
+  transition-duration: 500ms;
+  &:hover {
+    background-color: $primary-color;
+  }
   &:last-child {
     margin-right: 20px;
   }
@@ -107,7 +136,6 @@
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
-  line-height: 186%;
   text-align: right;
   color: $seventeenth-color;
   margin-right: 40px;
@@ -123,6 +151,11 @@
 
 .footer__telephone {
   color: $primary-color;
+  transition-property: transform;
+  transition-duration: 500ms;
+  &:hover {
+    transform: scaley(1.5);
+  }
 }
 
 .fotter__copyrights {
@@ -229,7 +262,7 @@
   }
 
   .footer__list-items {
-    height: 220px;
+    height: 245px;
   }
 
   .footer__link {
