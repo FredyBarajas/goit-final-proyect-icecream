@@ -24,13 +24,12 @@
     text-transform: uppercase;
     color: $primary-color;
 }
-.products-description{
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
+.section-title{
+    padding-bottom: 200px;
 }
-.list-description{
-    list-style: none;
+.list_card{
+    width: 280px;
+    height: 489px
 }
 .product--name{
     font-family: 'Titan One';
@@ -54,6 +53,13 @@
     font-weight: 700;
     line-height: 152%;  
 }
+.list-description:not(:last-child){
+    margin-bottom: 32px;
+}
+.image_product{
+    position: relative;
+    z-index: 1;
+}
 .image {
     position: absolute;
     right: -23px;
@@ -71,133 +77,134 @@
     margin-bottom: 200px;
     padding-top: 150px;
     display: flex;
-    position: relative;
+    flex-direction: column;
     bottom: -200px;
 }
 .img-brown{
     @extend .img-pink;
     background-color: $fifth-color;
-
 }
 .img-green{
     @extend .img-pink;
     background-color: $fourth-color;
+    bottom: 0px;
 }
 .btn {
     position: relative;
     left: 116px;
-    fill: #d41443;
+    fill: $primary-color;
     border: 2px;
     border-radius: 100%;
     margin-bottom: 40px;
-    padding: 15px;
     background-color: #ffff;
+    width: 40px;
+    height: 40px;
+}
+.list_card{
+    justify-content: flex-start;
+    display: flex;
+    bottom: 300px;
 }
 @media screen and (min-width: 768px){
     .product{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     }
     .plus-section{
-        font-size: 26px;
-        padding-bottom: 18px;
+    font-size: 26px;
+    padding-bottom: 18px;
     }
     .name-section{
-        font-size: 48px;
-        }
+    font-size: 48px;
+    margin-bottom: 80px;
+    }
     .section-title{
     display: flex;
     flex-direction: column;
-    }
-    .container{
-        width: 768px;
-        display: flex;
-        justify-content: center; 
-        flex-direction: column;
-    }
-    .list{
-        display: flex;
-        justify-content: space-between ;
-        width: 224px;
+}
+    .list_card{
+    display: flex;
+    flex-wrap: wrap;
+    width: 224px;
+    height: 473px;
+    gap: 16px;
     }
     .image{
-        width: 220px;
-        height: 224px;
-        right: 0px;
-        top: -120px        }
-        .img-pink:not(:last-child):not(:last-child) {
-            margin-right: 16px;
-        }      
-        .list-card{
-            display: flex;
-            flex-wrap: nowrap;
-        }  
-        .btn{
-            left: 90px;
-        }
+    width: 220px;
+    height: 224px;
+    right: 0px;
+    top: -120px  
+    }      
+    .btn{
+    left: 90px;
+    }
 }
 @media screen and (min-width: 1200px){
-    .product{
+    .list_card{
+        margin: 0px;
+    }
+    .section-title{
+        margin-bottom: 100px;
         display: flex;
-        flex-direction: column;
         justify-content: center;
     }
     .plus-section{
-        font-size: 30px;
-        padding-bottom: 16px;
+    font-size: 30px;
+    padding-bottom: 16px;
     }
     .name-section{
-        font-size: 58px;
-
-    }
-    
+    font-size: 58px;
+    }  
     .section-title{
     display: flex;
     flex-direction: column;
     }
-    .container{
-        width: 1200px;
-        display: flex;
-        justify-content: center; 
-        flex-direction: column;
-    }
-    .list{
-        display: flex;
-        justify-content: space-between ;
-        width: 368px;
-    }
     .image{
-        width: 368px;
-        height: 394px;
-        right: 0px;   
-        top: -250px;
-        }
-        .img-pink:not(:last-child):not(:last-child) {
-            margin-right: 32px;
-        }      
-        .list-card{
-            position: relative;
-            display: flex;
-            flex-wrap: nowrap;
-            top:100px;
-        }  
-        .btn{
-            left: 160px;
-        }
-        .product--name{
-            font-size: 30px;
-            line-height: 34.35px;
-            font-family: "Titan One";
-            font-weight: 400px;
-
-        }
-        .product--description{
-            font-size:16px;
-            font-family: "DDM Sans";
-            font-weight: 700;
-            line-height: 28px;
-            
-
-        }
+    width: 368px;
+    height: 394px;
+    right: 0px;   
+    top: -250px;
+    }
+    .img-pink:not(:last-child):not(:last-child) {
+    margin-right: 32px;
+    }  
+    .btn{
+    left: 160px;
+    }
+    .product--name{
+    font-size: 30px;
+    line-height: 34.35px;
+    font-family: "Titan One";
+    font-weight: 400px;
+    }
+    .product--description{
+    font-size:16px;
+    font-family: "DDM Sans";
+    font-weight: 700;
+    line-height: 28px;
+    }
+    .list_card{
+    width: 368px;
+    height: 535px;
+    justify-content: center;
+    display: flex;
+    }
+    .products-description:hover .btn{
+        transform: rotate(-90deg);
+        width: 50px;
+        height: 50px;
+        margin-top: -10px;
+        box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.15);
+        background-color: $primary-color;
+        border-radius: 35%;
+        fill: #ffff;
+        cursor: pointer;
+    }
+    .products-description:hover .list-description {
+        cursor: pointer;
+        opacity: 1;
+        box-shadow: 0px 5px 15px rgba(144, 35, 62, 0.632);
+        border-radius: 24px;
+}
 }
