@@ -1,4 +1,4 @@
-cards{
+.cards{
     margin-top: 60px;
 }
 .plus-section{   
@@ -24,17 +24,10 @@ cards{
     text-transform: uppercase;
     color: $primary-color;
 }
-.products-description{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 .section-title{
     padding-bottom: 200px;
 }
 .list_card{
-    display: flex;
-    justify-content: center;
     width: 280px;
     height: 489px
 }
@@ -106,6 +99,11 @@ cards{
     background-color: #ffff;
     width: 40px;
     height: 40px;
+}
+.list_card{
+    justify-content: flex-start;
+    display: flex;
+    bottom: 300px;
 }
 @media screen and (min-width: 768px){
     .product{
