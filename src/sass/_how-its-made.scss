@@ -1,3 +1,8 @@
+.how-its-made{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .how-li {
   list-style: none;
   padding-left: 0;
@@ -11,34 +16,33 @@
 }
 
 .how-container {
-  height: 1480px;
   background-color: #fff5f6;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 360px;
+  margin-top: 60px;
+  width: 320px;
 }
 
 .title-container {
   width: 200px;
-  height: 112px;
   padding: 1px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 60px;
 }
 
 .how-title-t {
-  font-family: Titan One;
+  font-family: 'Titan One';
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
   letter-spacing: 0em;
   text-align: center;
-  margin-top: 50px;
   color: $secondary-color;
 }
 
 .how-title-h {
-  font-family: Titan One;
+  font-family: 'Titan One';
   font-size: 34px;
   font-weight: 400;
   line-height: 39px;
@@ -55,7 +59,6 @@
   line-height: 162%;
   color: #000000;
   width: 220px;
-  height: 79px;
   margin-left: 20px;
 }
 
@@ -67,11 +70,14 @@
   color: #907e82;
   width: 220px;
   margin-left: 20px;
-  margin-top: 33px;
+
+  z-index: 1;
+  padding-top: 25px;
+
 }
 
 .how-num {
-  font-family: Titan One;
+  font-family: 'Titan One';
   font-size: 36px;
   font-weight: 400;
   line-height: 41px;
@@ -93,27 +99,29 @@
   width: 230px;
 }
 
-.how-box {
-  position: absolute;
-  display: flex;
+.how-box-c {
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
-.how-box:nth-child(2) {
-  top: 3570px;
+.how-box-ima{
+  position: relative;
+  z-index: 2;
+  top:-220px;
+  margin-left: 20px;
+
+
 }
 
 .how-imagen {
-  margin-top: 60px;
+  margin-top: 32px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.how-imag-section {
-  margin-left: 20px;
-}
-
 .how-button {
-  margin-top: 240px;
   margin-left: 20px;
   width: 176px;
   height: 44px;
@@ -128,6 +136,7 @@
   justify-content: center;
   align-items: center;
   color: #d41443;
+  margin-top: -120px;
 }
 
 .how-svg-button {
@@ -151,17 +160,104 @@
   height: 50px;
   width: 49px;
 }
-
 .how-svg-corazon {
   height: 50px;
   width: 49px;
 }
 
+
 @media screen and (min-width: 768px) {
+  .how-container {
+    width: 768px;
+  }
+
+  .title-container {
+    width: 450px;
+  }
+
+
   .how-title-t {
     font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+
   }
+  
   .how-title-h {
     font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 55px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
   }
+
+  .how-diretion-r{
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  }
+  
+  .how-diretion-c{
+    display: flex;
+    flex-direction: column;
+    margin-left: 32px;
+  }
+
+  .how-ima-conte{
+    width: 368px;
+  }
+
+  .how-imagen{
+    width: 336px;
+    margin-left: 32px;
+    margin-top: 0;
+  }
+
+  .how-text-f{
+    width: 334px;
+    font-size: 14px;
+  }
+
+  .how-text-c {
+    font-size: 14px;
+    width: 334px;
+    
+  }
+
+  .how-box-ima{
+    display: none;
+    z-index: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .how-button {
+    margin-top: 40px;
+  }
+
+  .how-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-left: 32px;
+  }
+
+  // .how-butitem{
+  //   flex-basis: calc((100% - 12px)/3);
+  //   border: 1px solid black;
+  //   width: 170px;
+
+  // }
+
+  .how-conte-list{
+    width: 180px;
+  }
+
+  .how-text-num{
+    width: 180px;
+  }
+  
 }
