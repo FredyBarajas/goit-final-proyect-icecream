@@ -17,6 +17,7 @@
 }
 
 .how-container {
+  background-color: #fff5f6;
   margin-right: auto;
   margin-left: auto;
   margin-top: 60px;
@@ -164,6 +165,7 @@
 @media screen and (min-width: 768px) {
   .how-container {
     width: 768px;
+    height: 1020px;
   }
 
   .title-container {
