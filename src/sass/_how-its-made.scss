@@ -1,9 +1,8 @@
-.how-its-made{
+.how-its-made {
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: #fff5f6;
-
 }
 .how-li {
   list-style: none;
@@ -104,7 +103,6 @@
     &:hover{
       transform: scale(1.15);
     }
-
 }
 
 .how-num {
@@ -134,16 +132,13 @@
   z-index: 1;
   margin-left: auto;
   margin-right: auto;
-
 }
 
-.how-box-ima{
+.how-box-ima {
   position: relative;
   z-index: 2;
-  top:-220px;
+  top: -220px;
   margin-left: 20px;
-
-
 }
 
 .how-imagen {
@@ -227,25 +222,23 @@
   }
 }
 
-
 @media screen and (min-width: 768px) {
   .how-container {
     width: 768px;
+    height: 1020px;
   }
 
   .title-container {
     width: 450px;
   }
 
-
   .how-title-t {
     font-size: 26px;
     line-height: 30px;
     text-align: center;
     text-transform: uppercase;
-
   }
-  
+
   .how-title-h {
     font-size: 48px;
     font-style: normal;
@@ -256,29 +249,29 @@
     text-transform: uppercase;
   }
 
-  .how-diretion-r{
-  display: flex;
-  flex-direction: row;
-  margin-top: 40px;
+  .how-diretion-r {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
   }
-  
-  .how-diretion-c{
+
+  .how-diretion-c {
     display: flex;
     flex-direction: column;
     margin-left: 32px;
   }
 
-  .how-ima-conte{
+  .how-ima-conte {
     width: 368px;
   }
 
-  .how-imagen{
+  .how-imagen {
     width: 336px;
     margin-left: 32px;
     margin-top: 0;
   }
 
-  .how-text-f{
+  .how-text-f {
     width: 334px;
     font-size: 14px;
   }
@@ -286,10 +279,9 @@
   .how-text-c {
     font-size: 14px;
     width: 334px;
-    
   }
 
-  .how-box-ima{
+  .how-box-ima {
     display: none;
     z-index: 0;
     margin-left: auto;
@@ -330,19 +322,22 @@
         transform-origin: center center;
         transform: rotate(360deg);
        }
-      }
+     }
   }
 
 
   .how-conte-list{
+
+
+  .how-conte-list {
+
     width: 180px;
   }
 
-  .how-text-num{
+  .how-text-num {
     width: 180px;
   }
 
- 
   .how-animation{
     animation-name: spin;
     animation-duration: 3s;
@@ -609,14 +604,4 @@
   }
   }
 
-
-
-
-  
-
-
-
-
-
-  
 }

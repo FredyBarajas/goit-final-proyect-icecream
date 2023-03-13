@@ -34,6 +34,15 @@
   }
 }
 
+.with {
+  width: 320px;
+  padding-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 0;
+  margin-top: 16px;
+  padding-right: 30%;
+}
 .icon--location {
   @extend .mobile-menu__icon;
   stroke: #fff;
@@ -61,16 +70,16 @@
 
 .footer__description {
   width: 100%;
-  padding-right: 10%;
+  padding-right: 30%;
   font-family: 'Titan One';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-
   text-transform: uppercase;
   color: #ffa5ba;
   margin-top: 40px;
-  text-align: center;
+  margin-left: 0px;
+  text-align: left;
   transition-property: letter-spacing;
   transition-duration: 500ms;
   &:hover {
@@ -79,8 +88,6 @@
 }
 
 .footer__Whit {
-  width: 100%;
-  padding-right: 20%;
   font-family: 'Titan One';
   font-style: normal;
   font-weight: 400;
@@ -88,14 +95,13 @@
   line-height: 39px;
   text-transform: uppercase;
   color: $primary-color;
-  margin-top: 16px;
   transition-property: transform;
   transition-duration: 500ms;
-  &:hover {
-    transform: scale(1.5);
+  &:nth-child(5) {
+    margin-right: 80px;
   }
-  &:last-child {
-    margin-right: 20px;
+  &:hover {
+    transform: scaley(1.5);
   }
 }
 
@@ -151,10 +157,10 @@
 
 .footer__telephone {
   color: $primary-color;
-  transition-property: transform;
+  transition-property: font-size;
   transition-duration: 500ms;
   &:hover {
-    transform: scaley(1.5);
+    font-size: 16px;
   }
 }
 
@@ -190,6 +196,7 @@
 @media screen and (min-width: 768px) {
   .footer {
     align-items: flex-start;
+    margin-top: -60px;
   }
   .list--butoons {
     flex-direction: row;
@@ -208,11 +215,17 @@
     padding-left: 0;
   }
 
+  .with {
+    width: 768px;
+    padding-left: 0;
+  }
   .footer__Whit {
     font-size: 48px;
-    width: 340px;
     margin-left: 0;
     padding-left: 0;
+    &:nth-child(5) {
+      margin-right: 380px;
+    }
   }
 
   .footer__list-items {
@@ -244,21 +257,30 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .footer {
+    padding-top: 60px;
+  }
+
   .footer__description {
     font-size: 30px;
-    width: 474px;
+    width: 450px;
     margin-top: 120px;
+    text-align: center;
+    color: #ffa5ba;
   }
 
   .footer__Whit {
     font-size: 58px;
-    width: 474px;
     padding-right: 0;
-    margin-top: 16px;
+    margin-left: 0;
+    margin-right: 0;
+    &:nth-child(5) {
+      margin-right: 0;
+    }
   }
 
   .footer__list {
-    bottom: 60px;
+    bottom: 80px;
   }
 
   .footer__list-items {
@@ -266,6 +288,6 @@
   }
 
   .footer__link {
-    bottom: 0;
+    bottom: 20px;
   }
 }
