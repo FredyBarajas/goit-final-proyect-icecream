@@ -71,7 +71,6 @@
   }
 
   &__item {
-    margin: 0 auto;
   }
 
   &__image {
@@ -163,6 +162,10 @@
 }
 
 @media (min-width: 768px) {
+  .container__testimonials {
+    max-width: 768px;
+  }
+
   .wrapper {
     display: flex;
     align-items: center;
@@ -242,6 +245,10 @@
 }
 
 @media (min-width: 1200px) {
+  .container__testimonials {
+    max-width: 1200px;
+  }
+
   .wrapper {
     height: 430px;
     width: 1150px;
@@ -267,7 +274,7 @@
     z-index: 2;
     width: 283px;
     height: 283px;
-    border-radius: 30px;
+    border-radius: 50px;
   }
 
   .wrapper__image:hover,
@@ -294,7 +301,7 @@
   .rewiews-card__description {
     height: 138px;
     width: 968px;
-    left: 232px;
+    left: 432px;
     background-color: $twelfth-color;
     position: relative;
   }
@@ -302,12 +309,12 @@
   .rewiews-card__image {
     margin-top: 120px;
     position: relative;
-    left: 195px;
+    left: 400px;
   }
 
   .rewiews-card__container-svg-1 {
     position: relative;
-    left: 190px;
+    left: 400px;
   }
 
   .rewiews-card__title {
@@ -318,11 +325,11 @@
     letter-spacing: 0em;
     text-align: center;
     position: relative;
-    left: 190px;
+    left: 400px;
   }
 
   .rewiews-card__container-svg-2 {
     position: relative;
-    left: 190px;
+    left: 400px;
   }
 }
