@@ -34,6 +34,15 @@
   }
 }
 
+.with {
+  width: 320px;
+  padding-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 0;
+  margin-top: 16px;
+  padding-right: 30%;
+}
 .icon--location {
   @extend .mobile-menu__icon;
   stroke: #fff;
@@ -79,8 +88,6 @@
 }
 
 .footer__Whit {
-  width: 100%;
-  padding-right: 20%;
   font-family: 'Titan One';
   font-style: normal;
   font-weight: 400;
@@ -88,14 +95,13 @@
   line-height: 39px;
   text-transform: uppercase;
   color: $primary-color;
-  margin-top: 16px;
   transition-property: transform;
   transition-duration: 500ms;
-  &:hover {
-    transform: scale(1.5);
+  &:nth-child(5) {
+    margin-right: 80px;
   }
-  &:last-child {
-    margin-right: 20px;
+  &:hover {
+    transform: scaley(1.5);
   }
 }
 
@@ -151,10 +157,10 @@
 
 .footer__telephone {
   color: $primary-color;
-  transition-property: transform;
+  transition-property: font-size;
   transition-duration: 500ms;
   &:hover {
-    transform: scaley(1.5);
+    font-size: 16px;
   }
 }
 
@@ -208,11 +214,17 @@
     padding-left: 0;
   }
 
+  .with {
+    width: 768px;
+    padding-left: 0;
+  }
   .footer__Whit {
     font-size: 48px;
-    width: 340px;
     margin-left: 0;
     padding-left: 0;
+    &:nth-child(5) {
+      margin-right: 380px;
+    }
   }
 
   .footer__list-items {
@@ -253,13 +265,16 @@
 
   .footer__Whit {
     font-size: 58px;
-    width: 474px;
     padding-right: 0;
-    margin-top: 16px;
+    margin-left: 0;
+    margin-right: 0;
+    &:nth-child(5) {
+      margin-right: 0;
+    }
   }
 
   .footer__list {
-    bottom: 60px;
+    bottom: 80px;
   }
 
   .footer__list-items {
@@ -267,6 +282,6 @@
   }
 
   .footer__link {
-    bottom: 0;
+    bottom: 20px;
   }
 }
