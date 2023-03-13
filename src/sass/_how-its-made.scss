@@ -39,22 +39,7 @@
         margin-left: 50px;
         margin-top: 0;
       }
-  &:hover {
-    transform: scale(1.15);
-    .anima1 {
-      transition-property: transform;
-      transition-duration: 500ms;
-      transition-property: margin-left;
-      transition-duration: 500ms;
-      margin-left: 50px;
-    }
-    .anima3 {
-      transition-property: transform;
-      transition-duration: 500ms;
-      transition-property: margin-left;
-      transition-duration: 500ms;
-      margin-left: 50px;
-    }
+ 
   }
 }
 
@@ -503,25 +488,9 @@
           transform-origin: center center;
           transform: rotate(360deg);
         }
-    &:hover {
-      transform: scale(1);
-      .anima1 {
-        transition-property: margin-left;
-        transition-duration: 500ms;
-        margin-left: 0px;
       }
-      .anima3 {
-        transition-property: margin-left;
-        transition-duration: 500ms;
-        margin-left: 0px;
-      }
-      .how-conte-anima {
-        transition-property: transform;
-        transition-duration: 4s;
-        transform-origin: center center;
-        transform: rotate(360deg);
-      }
-    }
+    
+    
   }
   .how-num {
     font-size: 58px;
@@ -633,4 +602,3 @@
     }
   }
 }
-
