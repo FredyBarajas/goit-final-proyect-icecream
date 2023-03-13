@@ -196,6 +196,7 @@
 @media screen and (min-width: 768px) {
   .footer {
     align-items: flex-start;
+    margin-top: -60px;
   }
   .list--butoons {
     flex-direction: row;
@@ -256,11 +257,16 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .footer {
+    padding-top: 60px;
+  }
+
   .footer__description {
     font-size: 30px;
     width: 450px;
     margin-top: 120px;
     text-align: center;
+    color: #ffa5ba;
   }
 
   .footer__Whit {
