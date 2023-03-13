@@ -1,4 +1,459 @@
+header {
+  background-color: $eighth-color;
+}
+
 .container__header {
   height: 502px;
-  background-color: $eighth-color;
+  padding-top: 8px;
+  position: relative;
+  overflow: hidden;
+  background-image: url(/src/images/ellipse.png);
+  background-size: 346px 346px;
+  background-repeat: no-repeat;
+  background-position: top 83px left 36px;
+}
+
+.navigation {
+  display: none;
+  position: absolute;
+  top: 52px;
+  left: 383px;
+}
+
+.navigation__list {
+  display: flex;
+}
+
+.navigation__item {
+  margin-right: 35px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.navigation__link {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.header__buy-now {
+  @extend .button--buy;
+  display: none;
+  position: absolute;
+  top: -25px;
+  right: 32px;
+  padding-left: 0;
+  padding-right: 0;
+  width: 160px;
+  box-shadow: none;
+}
+
+.burger {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.header-nav__sootasty::before {
+  content: '';
+  display: none;
+}
+
+.header-nav__image {
+  width: 171px;
+  height: 410px;
+  position: absolute;
+  right: 32px;
+  bottom: 0px;
+  cursor: pointer;
+  display: block;
+}
+
+.text {
+  position: relative;
+}
+
+.text__tittle {
+  font-family: Titan One;
+  font-style: Regular;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $ninth-color;
+  margin-bottom: 20px;
+}
+
+.text__passion {
+  color: $primary-color;
+  font-size: 48px;
+  line-height: 0.96;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.hold-btn {
+  display: flex;
+}
+
+.text__btn_1 {
+  background-color: $primary-color;
+  margin-right: 10px;
+  width: 62px;
+
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
+    transform: translateY(-3px);
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.text__btn_1-link {
+  color: $ninth-color;
+}
+
+.text__btn_2 {
+  background-color: $ninth-color;
+  width: 84px;
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+    transform: translateY(-3px);
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.text__btn_2-link {
+  color: $primary-color;
+}
+
+.text__btn_1,
+.text__btn_2 {
+  font-family: DM sans;
+  font-style: Regular;
+  font-size: 8px;
+  font-weight: 400;
+  border-radius: 20px;
+  padding: 0 14px;
+  cursor: pointer;
+  height: 24px;
+  font-size: 8px;
+  line-height: 1.25;
+  border: none;
+}
+
+.big-eco {
+  margin-left: 152px;
+  margin-bottom: 56px;
+  width: 114px;
+  height: 73px;
+  font-size: 8px;
+  line-height: 12px;
+  letter-spacing: 0;
+  color: $ninth-color;
+  position: relative;
+  display: none;
+}
+
+.big-eco__image::before {
+  content: '';
+}
+
+.product-milk {
+  width: 114px;
+  height: 73px;
+  font-size: 8px;
+  line-height: 12px;
+  letter-spacing: 0;
+  color: $ninth-color;
+  position: relative;
+}
+
+.btn-big-eco__icon {
+  fill: $primary-color;
+  border-radius: 50%;
+  width: 10;
+  height: 10;
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition-property: all;
+
+  &:hover .btn-big-eco {
+    transform: rotate(90deg);
+    width: 27px;
+    height: 27px;
+    background-color: #d41443;
+    border-radius: 50%;
+    fill: $ninth-color;
+  }
+}
+
+.btn-big-eco {
+  margin-top: 7px;
+  padding-bottom: -1px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: $ninth-color;
+  cursor: pointer;
+
+  &:hover .btn-big-eco__icon {
+    transform: rotate(90deg);
+    width: 27px;
+    height: 27px;
+    background-color: #d41443;
+    border-radius: 50%;
+    fill: $ninth-color;
+  }
+}
+
+.counter-sale {
+  display: none;
+}
+
+.counter-sale__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.counter-sale__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Titan One, sans-serif;
+  font-size: 28px;
+  line-height: 32px;
+  color: $primary-color;
+  background-image: url(/src/images/ellipse_blank.png);
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+}
+
+.counter-sale,
+.counter-sale__span {
+  font-family: DM Sans, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10.42px;
+  color: $ninth-color;
+}
+
+.counter-sale .counter-sale__item--size {
+  width: 51px;
+}
+
+@media screen and (min-width: 768px) {
+  .container__header {
+    padding-top: 32px;
+    height: 416px;
+    border: none;
+    background-size: 335px 333px;
+    background-position: bottom 40px right 185px;
+  }
+
+  .header-nav {
+    height: 50px;
+    margin-bottom: 20px;
+  }
+
+  .header__buy-now {
+    display: inline;
+  }
+  .header-nav__sootasty::before {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 32px;
+    width: 190px;
+    height: 150px;
+    background-image: url(/src/images/sootasty.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .header-nav__image {
+    width: 143px;
+    height: 336px;
+    top: 80px;
+    right: 303px;
+  }
+
+  .imagen {
+    width: 143px;
+    height: 336px;
+  }
+
+  .text {
+    margin-bottom: 61px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .text__tittle {
+    font-size: 22px;
+    line-height: 25px;
+  }
+
+  .text__passion {
+    font-size: 34px;
+    line-height: 0.91;
+  }
+
+  .big-eco {
+    display: block;
+  }
+
+  .btn-big-eco__icon {
+    width: 10;
+    height: 10;
+  }
+
+  .big-eco__image::before {
+    display: block;
+    position: absolute;
+    bottom: -40px;
+    left: -152px;
+    width: 152px;
+    height: 154px;
+    background-image: url(/src/images/big-eco.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .product-milk {
+    margin-left: 0;
+  }
+
+  .product-milk__text {
+    cursor: default;
+  }
+
+  .counter-sale {
+    display: block;
+    height: 103px;
+    text-align: center;
+  }
+}
+
+@media screen and(min-width: 1200px) {
+  .container__header {
+    height: 665px;
+    background-size: 534px 534px;
+    background-position: bottom 76px right 149px;
+  }
+
+  .navigation {
+    display: flex;
+  }
+  .header-nav__sootasty::before {
+    width: 304px;
+    height: 241px;
+    right: 16px;
+    background-image: url(/src/images/sootasty-1200.png);
+  }
+
+  .header-nav__image {
+    width: 236px;
+    height: 557px;
+    right: 328px;
+  }
+
+  .imagen {
+    position: absolute;
+    bottom: -28px;
+    width: 236px;
+    height: 557px;
+  }
+
+  .text {
+    margin-left: 0;
+    margin-bottom: 108px;
+  }
+
+  .text__tittle {
+    font-size: 38px;
+    line-height: 44px;
+  }
+
+  .text__passion {
+    font-size: 58px;
+    line-height: 0.91;
+  }
+
+  .text__btn_1 {
+    width: 107px;
+  }
+
+  .text__btn_1,
+  .text__btn_2 {
+    height: 40px;
+    font-size: 14px;
+    line-height: 1.28;
+  }
+
+  .text__btn_2 {
+    width: 138px;
+  }
+
+  .counter-sale__item {
+    width: 72px;
+    height: 77px;
+    font-size: 46px;
+    line-height: 53px;
+    background-size: 30px 30px;
+  }
+
+  .counter-sale .counter-sale__span {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  .counter-sale .counter-sale__item--size {
+    width: 92px;
+  }
+
+  .big-eco {
+    width: 200px;
+    height: 124px;
+    margin-left: 213px;
+    margin-bottom: 64px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .big-eco__image::before {
+    width: 213px;
+    height: 216px;
+    left: -210px;
+    bottom: -16px;
+    background-image: url(/src/images/big-eco-1200.png);
+  }
+
+  .product-milk {
+    width: 200px;
+    height: 78px;
+    font-size: 14px;
+    line-height: 1.43;
+  }
+
+  .btn-big-eco {
+    width: 26px;
+    height: 26px;
+  }
+
+  .header-nav {
+    margin-bottom: 60px;
+  }
 }
