@@ -13,12 +13,43 @@ header {
   background-position: top 83px left 36px;
 }
 
-.header-nav {
+.navigation {
+  display: none;
+  position: absolute;
+  top: 52px;
+  left: 383px;
+}
+
+.navigation__list {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 50px;
-  margin-bottom: 138px;
+}
+
+.navigation__item {
+  margin-right: 35px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.navigation__link {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.header__buy-now {
+  @extend .button--buy;
+  display: none;
+  position: absolute;
+  top: -25px;
+  right: 32px;
+  padding-left: 0;
+  padding-right: 0;
+  width: 160px;
+  box-shadow: none;
 }
 
 .burger {
@@ -75,6 +106,13 @@ header {
   background-color: $primary-color;
   margin-right: 10px;
   width: 62px;
+
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
+    transform: translateY(-3px);
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .text__btn_1-link {
@@ -84,6 +122,13 @@ header {
 .text__btn_2 {
   background-color: $ninth-color;
   width: 84px;
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+    transform: translateY(-3px);
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .text__btn_2-link {
@@ -132,19 +177,41 @@ header {
   position: relative;
 }
 
+.btn-big-eco__icon {
+  fill: $primary-color;
+  border-radius: 50%;
+  width: 10;
+  height: 10;
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition-property: all;
+
+  &:hover .btn-big-eco {
+    transform: rotate(90deg);
+    width: 27px;
+    height: 27px;
+    background-color: #d41443;
+    border-radius: 50%;
+    fill: $ninth-color;
+  }
+}
+
 .btn-big-eco {
   margin-top: 7px;
-  padding-bottom: 3px;
+  padding-bottom: -1px;
   width: 18px;
   height: 18px;
   border-radius: 50%;
   background-color: $ninth-color;
   cursor: pointer;
-}
 
-.btn-big-eco__icon {
-  fill: $primary-color;
-  border-radius: 50%;
+  &:hover .btn-big-eco__icon {
+    transform: rotate(90deg);
+    width: 27px;
+    height: 27px;
+    background-color: #d41443;
+    border-radius: 50%;
+    fill: $ninth-color;
+  }
 }
 
 .counter-sale {
@@ -201,6 +268,9 @@ header {
     margin-bottom: 20px;
   }
 
+  .header__buy-now {
+    display: inline;
+  }
   .header-nav__sootasty::before {
     display: block;
     position: absolute;
@@ -245,6 +315,11 @@ header {
     display: block;
   }
 
+  .btn-big-eco__icon {
+    width: 10;
+    height: 10;
+  }
+
   .big-eco__image::before {
     display: block;
     position: absolute;
@@ -279,6 +354,9 @@ header {
     background-position: bottom 76px right 149px;
   }
 
+  .navigation {
+    display: flex;
+  }
   .header-nav__sootasty::before {
     width: 304px;
     height: 241px;
@@ -373,11 +451,6 @@ header {
   .btn-big-eco {
     width: 26px;
     height: 26px;
-  }
-
-  .btn-big-eco__icon {
-    width: 10;
-    height: 10;
   }
 
   .header-nav {
