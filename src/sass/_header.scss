@@ -106,6 +106,13 @@ header {
   background-color: $primary-color;
   margin-right: 10px;
   width: 62px;
+
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
+    transform: translateY(-3px);
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .text__btn_1-link {
@@ -115,6 +122,13 @@ header {
 .text__btn_2 {
   background-color: $ninth-color;
   width: 84px;
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+    transform: translateY(-3px);
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .text__btn_2-link {
@@ -163,19 +177,41 @@ header {
   position: relative;
 }
 
+.btn-big-eco__icon {
+  fill: $primary-color;
+  border-radius: 50%;
+  width: 10;
+  height: 10;
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition-property: all;
+
+  &:hover .btn-big-eco {
+    transform: rotate(90deg);
+    width: 27px;
+    height: 27px;
+    background-color: #d41443;
+    border-radius: 50%;
+    fill: $ninth-color;
+  }
+}
+
 .btn-big-eco {
   margin-top: 7px;
-  padding-bottom: 3px;
+  padding-bottom: -1px;
   width: 18px;
   height: 18px;
   border-radius: 50%;
   background-color: $ninth-color;
   cursor: pointer;
-}
 
-.btn-big-eco__icon {
-  fill: $primary-color;
-  border-radius: 50%;
+  &:hover .btn-big-eco__icon {
+    transform: rotate(90deg);
+    width: 27px;
+    height: 27px;
+    background-color: #d41443;
+    border-radius: 50%;
+    fill: $ninth-color;
+  }
 }
 
 .counter-sale {
@@ -277,6 +313,11 @@ header {
 
   .big-eco {
     display: block;
+  }
+
+  .btn-big-eco__icon {
+    width: 10;
+    height: 10;
   }
 
   .big-eco__image::before {
@@ -410,11 +451,6 @@ header {
   .btn-big-eco {
     width: 26px;
     height: 26px;
-  }
-
-  .btn-big-eco__icon {
-    width: 10;
-    height: 10;
   }
 
   .header-nav {
