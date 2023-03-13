@@ -184,6 +184,7 @@
   .contacts__item:hover{
     box-shadow: 0px 8px 30px  rgba(144, 35, 62, 0.632);  
     cursor: pointer;
+    transition-duration: 500ms;
     }
     .contacts__contacts{
       display: flex;
