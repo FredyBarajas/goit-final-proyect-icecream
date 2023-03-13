@@ -15,6 +15,30 @@
   margin-top: 40px;
   margin-left: 20px;
   margin-bottom: 87px;
+  transition-property: transform;
+  transition-duration: 500ms;
+    &:hover{
+      transform: scale(1.15);
+      .anima1{
+        transition-property: margin-left,  margin-bottom;
+        transition-duration: 500ms;
+        margin-left: 50px;
+        margin-bottom: 0;
+        
+      }
+      .anima2{
+        transition-property: margin-left,  margin-bottom, margin-top;
+        transition-duration: 500ms;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+      }
+      .anima3{
+        transition-property: margin-left, margin-top;
+        transition-duration: 500ms;
+        margin-left: 50px;
+        margin-top: 0;
+      }
   &:hover {
     transform: scale(1.15);
     .anima1 {
@@ -384,6 +408,9 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .how-its-made{
+    height: 1300px;
+  }
   .how-container {
     width: 1200px;
   }
@@ -457,6 +484,25 @@
     flex-wrap: wrap;
     gap: 115px;
     margin-left: 32px;
+    margin-bottom: 100px;
+      &:hover{
+        transform: scale(1);
+        .anima1{
+          transition-property: margin-left;
+          transition-duration: 500ms;
+          margin-left: 0px;
+        }
+        .anima3{
+          transition-property: margin-left;
+          transition-duration: 500ms;
+          margin-left: 0px;
+        }
+        .how-conte-anima{
+          transition-property: transform;
+          transition-duration: 4s;
+          transform-origin: center center;
+          transform: rotate(360deg);
+        }
     &:hover {
       transform: scale(1);
       .anima1 {
@@ -544,7 +590,6 @@
       transform: scale(1.25);
     }
   }
-
   .how-text-c {
     font-size: 14px;
     width: 463px;
@@ -589,3 +634,4 @@
     }
   }
 }
+
