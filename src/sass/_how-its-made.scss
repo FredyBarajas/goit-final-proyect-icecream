@@ -1,3 +1,10 @@
+.how-its-made{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff5f6;
+
+}
 .how-li {
   list-style: none;
   padding-left: 0;
@@ -8,37 +15,54 @@
   padding-left: 0;
   margin-top: 40px;
   margin-left: 20px;
+  margin-bottom: 87px;
+    &:hover{
+      transform: scale(1.15);
+      .anima1{
+        transition-property: transform;
+      transition-duration: 500ms;
+        transition-property: margin-left;
+        transition-duration: 500ms;
+        margin-left: 50px;
+      }
+      .anima3{
+        transition-property: transform;
+      transition-duration: 500ms;
+        transition-property: margin-left;
+        transition-duration: 500ms;
+        margin-left: 50px;
+      }
+    }
 }
 
+
 .how-container {
-  height: 1480px;
-  background-color: #fff5f6;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 360px;
+  margin-top: 60px;
+  width: 320px;
 }
 
 .title-container {
   width: 200px;
-  height: 112px;
   padding: 1px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 60px;
 }
 
 .how-title-t {
-  font-family: Titan One;
+  font-family: 'Titan One';
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
   letter-spacing: 0em;
   text-align: center;
-  margin-top: 50px;
   color: $secondary-color;
 }
 
 .how-title-h {
-  font-family: Titan One;
+  font-family: 'Titan One';
   font-size: 34px;
   font-weight: 400;
   line-height: 39px;
@@ -55,8 +79,12 @@
   line-height: 162%;
   color: #000000;
   width: 220px;
-  height: 79px;
   margin-left: 20px;
+  transition-property: transform;
+    transition-duration: 500ms;
+    &:hover{
+      transform: scale(1.15);
+    }
 }
 
 .how-text-c {
@@ -67,11 +95,20 @@
   color: #907e82;
   width: 220px;
   margin-left: 20px;
-  margin-top: 33px;
+
+  z-index: 1;
+  padding-top: 25px;
+
+  transition-property: transform;
+  transition-duration: 500ms;
+    &:hover{
+      transform: scale(1.15);
+    }
+
 }
 
 .how-num {
-  font-family: Titan One;
+  font-family: 'Titan One';
   font-size: 36px;
   font-weight: 400;
   line-height: 41px;
@@ -93,27 +130,34 @@
   width: 230px;
 }
 
-.how-box {
-  position: absolute;
-  display: flex;
+.how-box-c {
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
-.how-box:nth-child(2) {
-  top: 3570px;
+.how-box-ima{
+  position: relative;
+  z-index: 2;
+  top:-220px;
+  margin-left: 20px;
+
+
 }
 
 .how-imagen {
-  margin-top: 60px;
+  margin-top: 32px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.how-imag-section {
-  margin-left: 20px;
+  transition-property: transform;
+  transition-duration: 7s;
+    &:hover{
+      transform: rotate(360deg);
+    }
 }
 
 .how-button {
-  margin-top: 240px;
   margin-left: 20px;
   width: 176px;
   height: 44px;
@@ -128,6 +172,14 @@
   justify-content: center;
   align-items: center;
   color: #d41443;
+  margin-top: -120px;
+  &:hover{
+    width: 180px;
+    height: 45px;
+    font-size: 16px;
+    background-color: #dbc8cd;
+    border-radius: 30px;
+  }
 }
 
 .how-svg-button {
@@ -151,17 +203,420 @@
   height: 50px;
   width: 49px;
 }
-
 .how-svg-corazon {
   height: 50px;
   width: 49px;
 }
 
+.how-animation{
+  animation-name: spin;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  width: 50px;
+  transform-origin: center center;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
 @media screen and (min-width: 768px) {
+  .how-container {
+    width: 768px;
+  }
+
+  .title-container {
+    width: 450px;
+  }
+
+
   .how-title-t {
     font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+
   }
+  
   .how-title-h {
     font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 55px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
   }
+
+  .how-diretion-r{
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  }
+  
+  .how-diretion-c{
+    display: flex;
+    flex-direction: column;
+    margin-left: 32px;
+  }
+
+  .how-ima-conte{
+    width: 368px;
+  }
+
+  .how-imagen{
+    width: 336px;
+    margin-left: 32px;
+    margin-top: 0;
+  }
+
+  .how-text-f{
+    width: 334px;
+    font-size: 14px;
+  }
+
+  .how-text-c {
+    font-size: 14px;
+    width: 334px;
+    
+  }
+
+  .how-box-ima{
+    display: none;
+    z-index: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .how-button {
+    margin-top: 40px;
+    &:hover{
+      width: 160px;
+      height: 45px;
+      font-size: 16px;
+      background-color: #dbc8cd;
+      border-radius: 30px;
+    }
+  }
+
+  .how-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    margin-left: 32px;
+    &:hover{
+        transform: scale(1);
+      .anima1{
+        transition-property: margin-left;
+        transition-duration: 500ms;
+        margin-left: 0px;
+      }
+      .anima3{
+        transition-property: margin-left;
+        transition-duration: 500ms;
+        margin-left: 0px;
+      }
+       .how-conte-anima{
+        transition-property: transform;
+        transition-duration: 4s;
+        transform-origin: center center;
+        transform: rotate(360deg);
+       }
+      }
+  }
+
+
+  .how-conte-list{
+    width: 180px;
+  }
+
+  .how-text-num{
+    width: 180px;
+  }
+
+ 
+  .how-animation{
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    width: 50px;
+    transform-origin: center center;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .how-text-f{
+  
+    width: 334px;
+    font-size: 14px;
+    transition-property: transform;
+    transition-duration: 500ms;
+    &:hover{
+      transform: scale(1.15);
+    }
+
+  }
+  .how-text-c {
+    font-size: 14px;
+    width: 334px;
+
+    transition-property: transform;
+    transition-duration: 500ms;
+    &:hover{
+      transform: scale(1.15);
+    }
+  }
+
+  .how-imagen{
+    width: 336px;
+    transition-property: transform;
+    transition-duration: 7s;
+    &:hover{
+      transform: rotate(360deg);
+    }
+  }
+
+  
+}
+
+@media screen and (min-width: 1200px) {
+  .how-container {
+    width: 1200px;
+  }
+
+  .title-container {
+    width: 550px;
+    margin-top: 30px;
+  }
+
+  .how-title-t {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0;
+
+  }
+  
+  .how-title-h {
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 55px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-top: 16px;
+  }
+
+ 
+
+  .how-diretion-r{
+  margin-top: 60px;
+  width: 1200px;
+  background-image: url("../images/section.png");
+  background-size: cover;
+  }
+
+  .how-ima-conte{
+    width: 501px;
+  }
+  
+  .how-imagen{
+    width: 501px;
+    margin-left: 16px;
+  }
+
+  .how-text-f{
+    width: 463px;
+    font-size: 16px;
+    margin-left: 99px;
+    margin-top: 90px;
+  }
+
+  .how-text-c {
+    font-size: 14px;
+    width: 463px;
+    margin-left: 99px;
+    
+  }
+
+  .how-button {
+    margin-left: 99px;
+    font-size: 16px;
+  }
+
+  .how-svg-button {
+    margin-left: 14px;
+    height: 8px;
+    width: 8px;
+  }
+
+  .how-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 115px;
+    margin-left: 32px;
+      &:hover{
+        transform: scale(1);
+      .anima1{
+        transition-property: margin-left;
+        transition-duration: 500ms;
+        margin-left: 0px;
+      }
+      .anima3{
+        transition-property: margin-left;
+        transition-duration: 500ms;
+        margin-left: 0px;
+      }
+       .how-conte-anima{
+        transition-property: transform;
+        transition-duration: 4s;
+        transform-origin: center center;
+        transform: rotate(360deg);
+       }
+      }
+  }
+
+  .how-num{
+    font-size: 58px;
+    margin-top: 40px;
+  }
+
+  .how-text-num{
+    font-size: 16px;
+    margin-top: 16px;
+    width: 288px;
+  }
+
+  .how-conte-list{
+    width: 288px;
+  }
+
+  .how-direcition{
+    margin-bottom: 209px;
+  }
+
+   .how-butitem{
+     transition-property: transform;
+     transition-duration: 4s;
+     transition-timing-function: linear;
+     transition-delay: 0;
+   }
+
+
+  .how-animation{
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    width: 50px;
+    transform-origin: center center;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .how-button:hover {
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    background-color: #dbc8cd;
+    border-radius: 30px;
+    margin-top: 35px;
+    margin-left: 88px;
+  }
+
+ .how-text-f{
+    width: 463px;
+    font-size: 16px;
+    margin-left: 99px;
+    margin-top: 90px;
+    transition-property: transform;
+    transition-duration: 500ms;
+    &:hover{
+      transform: scale(1.25);
+    }
+  }
+  
+.how-text-c {
+    font-size: 14px;
+    width: 463px;
+    margin-left: 99px;
+    transition-property: transform;
+    transition-duration: 500ms;
+    &:hover{
+      transform: scale(1.25);
+    }
+
+  }
+    .how-imagen{
+    width: 501px;
+    transition-property: transform;
+    transition-duration: 7s;
+    &:hover{
+      transform: rotate(360deg);
+    }
+  }
+
+  .title-container {
+    width: 1200px;
+
+  }
+
+  .how-title-t{
+    transition-property: letter-spacing;
+    transition-duration: 500ms;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 0.04em;
+
+    &:hover {
+      letter-spacing: 20;
+    }
+  }
+  
+  .how-title-h {
+  transition-property: letter-spacing;
+  transition-duration: 500ms;
+  &:hover {
+    letter-spacing: 30;
+  }
+  }
+
+
+
+
+  
+
+
+
+
+
+  
 }

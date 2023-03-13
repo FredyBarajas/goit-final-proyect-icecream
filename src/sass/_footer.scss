@@ -4,7 +4,14 @@
   background-color: $fourteenth-color;
   flex-direction: column;
   align-items: center;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
   position: relative;
+  width: 100%;
+  align-items: center;
 }
 
 .footer__button--location {
@@ -20,6 +27,11 @@
   justify-content: center;
   align-items: center;
   color: #fff;
+  transition-property: transform;
+  transition-duration: 500ms;
+  &:hover {
+    transform: translatey(-10px);
+  }
 }
 
 .icon--location {
@@ -40,6 +52,11 @@
   justify-content: center;
   align-items: center;
   color: $primary-color;
+  transition-property: transform;
+  transition-duration: 500ms;
+  &:hover {
+    transform: translatey(-10px);
+  }
 }
 
 .footer__description {
@@ -49,10 +66,16 @@
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 21px;
+
   text-transform: uppercase;
   color: #ffa5ba;
   margin-top: 40px;
+  text-align: center;
+  transition-property: letter-spacing;
+  transition-duration: 500ms;
+  &:hover {
+    letter-spacing: 3;
+  }
 }
 
 .footer__Whit {
@@ -66,6 +89,14 @@
   text-transform: uppercase;
   color: $primary-color;
   margin-top: 16px;
+  transition-property: transform;
+  transition-duration: 500ms;
+  &:hover {
+    transform: scale(1.5);
+  }
+  &:last-child {
+    margin-right: 20px;
+  }
 }
 
 .footer__list {
@@ -84,6 +115,11 @@
   align-items: center;
   justify-content: center;
   background-color: $seventh-color;
+  transition-property: background-color;
+  transition-duration: 500ms;
+  &:hover {
+    background-color: $primary-color;
+  }
   &:last-child {
     margin-right: 20px;
   }
@@ -100,7 +136,6 @@
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
-  line-height: 186%;
   text-align: right;
   color: $seventeenth-color;
   margin-right: 40px;
@@ -116,6 +151,11 @@
 
 .footer__telephone {
   color: $primary-color;
+  transition-property: transform;
+  transition-duration: 500ms;
+  &:hover {
+    transform: scaley(1.5);
+  }
 }
 
 .fotter__copyrights {
@@ -136,4 +176,96 @@
 
 .Footer__paragraph {
   width: 150px;
+}
+
+.list--butoons {
+  @extend .list;
+  width: 100%;
+  justify-content: center;
+}
+
+.footer__list-items {
+  @extend .list;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    align-items: flex-start;
+  }
+  .list--butoons {
+    flex-direction: row;
+  }
+
+  .footer__button--franchise {
+    margin-top: 0;
+    margin-left: 12px;
+  }
+
+  .footer__description {
+    padding-right: 0;
+    font-size: 26px;
+    width: 340px;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .footer__Whit {
+    font-size: 48px;
+    width: 340px;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .footer__list-items {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: 200px;
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .footer__list {
+    position: absolute;
+    bottom: 100px;
+    right: 20px;
+  }
+
+  .footer__link {
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
+    margin-right: 20px;
+    width: 268px;
+  }
+
+  .Footer__paragraph {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__description {
+    font-size: 30px;
+    width: 474px;
+    margin-top: 120px;
+  }
+
+  .footer__Whit {
+    font-size: 58px;
+    width: 474px;
+    padding-right: 0;
+    margin-top: 16px;
+  }
+
+  .footer__list {
+    bottom: 60px;
+  }
+
+  .footer__list-items {
+    height: 245px;
+  }
+
+  .footer__link {
+    bottom: 0;
+  }
 }
