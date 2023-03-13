@@ -39,9 +39,24 @@
         margin-left: 50px;
         margin-top: 0;
       }
+  &:hover {
+    transform: scale(1.15);
+    .anima1 {
+      transition-property: transform;
+      transition-duration: 500ms;
+      transition-property: margin-left;
+      transition-duration: 500ms;
+      margin-left: 50px;
     }
+    .anima3 {
+      transition-property: transform;
+      transition-duration: 500ms;
+      transition-property: margin-left;
+      transition-duration: 500ms;
+      margin-left: 50px;
+    }
+  }
 }
-
 
 .how-container {
   margin-right: auto;
@@ -88,10 +103,10 @@
   width: 220px;
   margin-left: 20px;
   transition-property: transform;
-    transition-duration: 500ms;
-    &:hover{
-      transform: scale(1.15);
-    }
+  transition-duration: 500ms;
+  &:hover {
+    transform: scale(1.15);
+  }
 }
 
 .how-text-c {
@@ -108,9 +123,9 @@
 
   transition-property: transform;
   transition-duration: 500ms;
-    &:hover{
-      transform: scale(1.15);
-    }
+  &:hover {
+    transform: scale(1.15);
+  }
 }
 
 .how-num {
@@ -155,9 +170,9 @@
   margin-right: auto;
   transition-property: transform;
   transition-duration: 7s;
-    &:hover{
-      transform: rotate(360deg);
-    }
+  &:hover {
+    transform: rotate(360deg);
+  }
 }
 
 .how-button {
@@ -176,7 +191,7 @@
   align-items: center;
   color: #d41443;
   margin-top: -120px;
-  &:hover{
+  &:hover {
     width: 180px;
     height: 45px;
     font-size: 16px;
@@ -211,7 +226,7 @@
   width: 49px;
 }
 
-.how-animation{
+.how-animation {
   animation-name: spin;
   animation-duration: 3s;
   animation-timing-function: linear;
@@ -298,7 +313,7 @@
 
   .how-button {
     margin-top: 40px;
-    &:hover{
+    &:hover {
       width: 160px;
       height: 45px;
       font-size: 16px;
@@ -312,87 +327,84 @@
     flex-wrap: wrap;
     gap: 70px;
     margin-left: 32px;
-    &:hover{
-        transform: scale(1);
-      .anima1{
+    &:hover {
+      transform: scale(1);
+      .anima1 {
         transition-property: margin-left;
         transition-duration: 500ms;
         margin-left: 0px;
       }
-      .anima3{
+      .anima3 {
         transition-property: margin-left;
         transition-duration: 500ms;
         margin-left: 0px;
       }
-       .how-conte-anima{
+      .how-conte-anima {
         transition-property: transform;
         transition-duration: 4s;
         transform-origin: center center;
         transform: rotate(360deg);
-       }
-     }
+      }
+    }
   }
 
   .how-conte-list {
-
-    width: 180px;
-  }
-
-  .how-text-num {
-    width: 180px;
-  }
-
-  .how-animation{
-    animation-name: spin;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    width: 50px;
-    transform-origin: center center;
-  }
-
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-  
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-
-  .how-text-f{
-  
-    width: 334px;
-    font-size: 14px;
-    transition-property: transform;
-    transition-duration: 500ms;
-    &:hover{
-      transform: scale(1.15);
+    .how-conte-list {
+      width: 180px;
     }
 
-  }
-  .how-text-c {
-    font-size: 14px;
-    width: 334px;
+    .how-text-num {
+      width: 180px;
+    }
 
-    transition-property: transform;
-    transition-duration: 500ms;
-    &:hover{
-      transform: scale(1.15);
+    .how-animation {
+      animation-name: spin;
+      animation-duration: 3s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      width: 50px;
+      transform-origin: center center;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .how-text-f {
+      width: 334px;
+      font-size: 14px;
+      transition-property: transform;
+      transition-duration: 500ms;
+      &:hover {
+        transform: scale(1.15);
+      }
+    }
+    .how-text-c {
+      font-size: 14px;
+      width: 334px;
+
+      transition-property: transform;
+      transition-duration: 500ms;
+      &:hover {
+        transform: scale(1.15);
+      }
+    }
+
+    .how-imagen {
+      width: 336px;
+      transition-property: transform;
+      transition-duration: 7s;
+      &:hover {
+        transform: rotate(360deg);
+      }
     }
   }
-
-  .how-imagen{
-    width: 336px;
-    transition-property: transform;
-    transition-duration: 7s;
-    &:hover{
-      transform: rotate(360deg);
-    }
-  }
-
-  
 }
 
 @media screen and (min-width: 1200px) {
@@ -414,9 +426,8 @@
     text-align: center;
     text-transform: uppercase;
     margin-top: 0;
-
   }
-  
+
   .how-title-h {
     font-size: 58px;
     font-style: normal;
@@ -428,25 +439,23 @@
     margin-top: 16px;
   }
 
- 
-
-  .how-diretion-r{
-  margin-top: 60px;
-  width: 1200px;
-  background-image: url("../images/section.png");
-  background-size: cover;
+  .how-diretion-r {
+    margin-top: 60px;
+    width: 1200px;
+    background-image: url('../images/section.png');
+    background-size: cover;
   }
 
-  .how-ima-conte{
+  .how-ima-conte {
     width: 501px;
   }
-  
-  .how-imagen{
+
+  .how-imagen {
     width: 501px;
     margin-left: 16px;
   }
 
-  .how-text-f{
+  .how-text-f {
     width: 463px;
     font-size: 16px;
     margin-left: 99px;
@@ -457,7 +466,6 @@
     font-size: 14px;
     width: 463px;
     margin-left: 99px;
-    
   }
 
   .how-button {
@@ -495,37 +503,54 @@
           transform-origin: center center;
           transform: rotate(360deg);
         }
+    &:hover {
+      transform: scale(1);
+      .anima1 {
+        transition-property: margin-left;
+        transition-duration: 500ms;
+        margin-left: 0px;
       }
+      .anima3 {
+        transition-property: margin-left;
+        transition-duration: 500ms;
+        margin-left: 0px;
+      }
+      .how-conte-anima {
+        transition-property: transform;
+        transition-duration: 4s;
+        transform-origin: center center;
+        transform: rotate(360deg);
+      }
+    }
   }
 
-  .how-num{
+  .how-num {
     font-size: 58px;
     margin-top: 40px;
   }
 
-  .how-text-num{
+  .how-text-num {
     font-size: 16px;
     margin-top: 16px;
     width: 288px;
   }
 
-  .how-conte-list{
+  .how-conte-list {
     width: 288px;
   }
 
-  .how-direcition{
+  .how-direcition {
     margin-bottom: 209px;
   }
 
-   .how-butitem{
-     transition-property: transform;
-     transition-duration: 4s;
-     transition-timing-function: linear;
-     transition-delay: 0;
-   }
+  .how-butitem {
+    transition-property: transform;
+    transition-duration: 4s;
+    transition-timing-function: linear;
+    transition-delay: 0;
+  }
 
-
-  .how-animation{
+  .how-animation {
     animation-name: spin;
     animation-duration: 3s;
     animation-timing-function: linear;
@@ -538,7 +563,7 @@
     0% {
       transform: rotate(0deg);
     }
-  
+
     100% {
       transform: rotate(360deg);
     }
@@ -554,44 +579,41 @@
     margin-left: 88px;
   }
 
- .how-text-f{
+  .how-text-f {
     width: 463px;
     font-size: 16px;
     margin-left: 99px;
     margin-top: 90px;
     transition-property: transform;
     transition-duration: 500ms;
-    &:hover{
+    &:hover {
       transform: scale(1.25);
     }
   }
-  
   .how-text-c {
     font-size: 14px;
     width: 463px;
     margin-left: 99px;
     transition-property: transform;
     transition-duration: 500ms;
-    &:hover{
+    &:hover {
       transform: scale(1.25);
     }
-
   }
-    .how-imagen{
+  .how-imagen {
     width: 501px;
     transition-property: transform;
     transition-duration: 7s;
-    &:hover{
+    &:hover {
       transform: rotate(360deg);
     }
   }
 
   .title-container {
     width: 1200px;
-
   }
 
-  .how-title-t{
+  .how-title-t {
     transition-property: letter-spacing;
     transition-duration: 500ms;
     width: 1200px;
@@ -603,7 +625,7 @@
       letter-spacing: 20;
     }
   }
-  
+
   .how-title-h {
     transition-property: letter-spacing;
     transition-duration: 500ms;
@@ -611,6 +633,5 @@
       letter-spacing: 30;
     }
   }
-
 }
 
